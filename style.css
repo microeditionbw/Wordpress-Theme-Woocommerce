@@ -56,7 +56,9 @@ footer .copy {
   color: #8a7e3c;
   font-family: Pacifico;
   font-size: 20px; }
-
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
 .navbar-top {
   background-color: #4a4954; }
 

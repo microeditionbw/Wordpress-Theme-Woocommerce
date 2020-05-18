@@ -23,7 +23,7 @@
 <body <?php body_class(); ?> id="mainbody">
 <?php wp_body_open(); ?>
    <header id="masthead" class="site-header">
-            <nav class="navbar navbar-expand-lg static-top navbar-top">
+            <nav class="navbar navbar-expand-lg navbar-dark static-top navbar-top">
                <div class="container">
                   <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                      <?php
