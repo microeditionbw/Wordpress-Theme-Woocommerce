@@ -9,10 +9,13 @@ Good luck!
 
 ![Тема](fullscreen.png)
 <h1>Адаптивность</h1>
-===
 <h1>Пк</h1>
+
 ![Laptop, pc](laptop.jpg)
+
 <h1>Планшет</h1>
+
 ![table](tablet.jpg)
 <h1>Смартфон</h1>
+
 ![mobile](mobile.jpg)
