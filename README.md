@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 Responsive and cross-browser compatibility web design. 
 How to install (Wordpress 5.0+)
 ===
@@ -9,6 +8,9 @@ How to install (Wordpress 5.0+)
 Good luck!
 
 ![Тема](fullscreen.png)
+<h1>Адаптивность</h1>
 ![Laptop, pc](laptop.jpg)
 ![table](tablet.jpg)
 ![mobile](mobile.jpg)
+
+
