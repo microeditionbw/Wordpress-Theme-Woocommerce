@@ -2,7 +2,7 @@
 <div class="main-header-backgroud">
                <div class="titles">
                <div class="titles__first">
-                  <?php echo get_theme_mod( 'setting_welcome' ); ?>
+                  <?php echo get_theme_mod( 'setting_welcome', '123' ); ?>
                </div>
                <h1><?php printf( esc_html__( '%s', 'textdomain' ), get_bloginfo ( 'description' ) ); ?></h1>
                <a class="button anchor" href="#whywe">Далее</a>

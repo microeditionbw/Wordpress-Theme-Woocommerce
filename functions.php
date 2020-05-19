@@ -38,18 +38,7 @@ if ( ! $menu_exists ) {
         'menu-item-url'     => home_url( '/' ), 
         'menu-item-status'  => 'publish'
     ) );
- 
-    wp_update_nav_menu_item( $menu_id, 0, array(
-        'menu-item-title'  =>  __( 'Магазин', 'textdomain' ),
-        'menu-item-url'    => home_url( '/shop/' ), 
-        'menu-item-status' => 'publish'
-    ) );
 
-    wp_update_nav_menu_item( $menu_id, 0, array(
-        'menu-item-title'  =>  __( 'Корзина', 'textdomain' ),
-        'menu-item-url'    => home_url( '/cart/' ), 
-        'menu-item-status' => 'publish'
-    ) );
 }
 
 		/*
@@ -134,6 +123,20 @@ if ( ! $menu_exists ) {
 	}
 endif;
 add_action( 'after_setup_theme', 'goldenskin_setup' );
+
+function themename_customize_register($wp_customize){
+        $wp_customize->add_setting( 'setting_welcome', array(
+            'default'        => 'Добро пожаловать в цех!',
+            'capability'     => 'edit_theme_options',
+            'type'           => 'theme_mod',
+        ));
+        $wp_customize->add_control( 'test_control', array(
+            'label'      => __('Заголовок', 'themename'),
+            'section'    =>  'title_tagline',
+            'settings'   => 'setting_welcome',
+        ));
+}
+add_action('customize_register', 'themename_customize_register');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -293,19 +296,7 @@ class IBenic_Walker extends Walker_Nav_Menu {
 		$output .='</a>';
     }
 }
-function themename_customize_register($wp_customize){
-        $wp_customize->add_setting( 'setting_welcome', array(
-            'default'        => 'Добро пожаловать в цех!',
-            'capability'     => 'edit_theme_options',
-            'type'           => 'theme_mod',
-        ));
-        $wp_customize->add_control( 'test_control', array(
-            'label'      => __('Заголовок', 'themename'),
-            'section'    =>  'title_tagline',
-            'settings'   => 'setting_welcome',
-        ));
-}
-add_action('customize_register', 'themename_customize_register'); 	
+ 	
 
 add_filter( 'get_search_form', 'filter_function_name_7721' );
 function filter_function_name_7721( $form ){
