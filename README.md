@@ -7,3 +7,8 @@ How to install (Wordpress 5.0+)
 3. Setting up your website params. Create woocommerce products. Paste the PHP code "slider" into your template  "include" file.
 4. Enjoy.
 Good luck!
+
+![Тема](fullscreen.png)
+![Laptop, pc](laptop.jpg)
+![table](tablet.jpg)
+![mobile](mobile.jpg)
