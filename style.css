@@ -645,3 +645,6 @@ line-height:21px;
 form.wpcf7-form {
     float: right;
 }
+ul {
+  list-style-type: none !important;
+}
