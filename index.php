@@ -77,13 +77,8 @@
             </div>
             <div class="row">
                <div class="col-md-8">
-                  <form method="post">
-                     <input class="form-control" name="name" placeholder="Имя..." /><br />
-                     <input class="form-control" name="phone" placeholder="Телефон..." /><br />
-                     <input class="form-control" name="email" placeholder="E-mail..." /><br />
-                     <textarea class="form-control" name="text" placeholder="Чем мы можем вам помочь?" style="height:150px;"></textarea><br />
-                     <input class="btn btn-primary" type="submit" value="Отправить" /><br /><br />
-                  </form>
+<?php //contact form 7
+echo do_shortcode( '[contact-form-7 id="71" title="Обратная связь"]' );  ?>
                </div>
                <div class="col-md-4">
                   <b>Информация мастера:</b> <br />

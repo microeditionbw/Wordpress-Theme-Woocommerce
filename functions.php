@@ -124,6 +124,13 @@ if ( ! $menu_exists ) {
 endif;
 add_action( 'after_setup_theme', 'goldenskin_setup' );
 
+
+function prefix_disable_comment_url($fields) { 
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','prefix_disable_comment_url');
+
 function themename_customize_register($wp_customize){
         $wp_customize->add_setting( 'setting_welcome', array(
             'default'        => 'Добро пожаловать в цех!',

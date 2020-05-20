@@ -31,18 +31,11 @@ body {
   height: 100%;
   max-height: 1024px;
   background: url(assets/images/first-bg.jpg) no-repeat center top/cover; }
-div#navbarResponsive {
-    text-align: center;
-}
-div#navbarResponsive ul {
-    width: 100%;
-}
+
 .navbar ul a:hover{
     background-color: #4a4454;
 }
-div#navbarResponsive a.nav-link {
-    width: 100%;
-}
+
 footer {
   padding: 10px; }
 .navbar .container, #masthead
@@ -223,8 +216,58 @@ button.pswp__button, button.pswp__button--arrow--left::before, button.pswp__butt
   left: 0;
   z-index: 99999;
   margin: 10px; }
-
+  .post-navigation:after
+  {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  .post-navigation {
+  font-size: 15px;
+    margin-bottom: 10px !important;
+}
+.post-navigation .nav-previous {
+    float: left;
+}
+.post-navigation .nav-next {
+    float: right;
+}
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media (max-width:768px) {
+.post-navigation {
+  text-align: center;
+}
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+  float: none;
+    margin-bottom: 7px;
+}
+}
+@media screen and (max-width: 769px) and (min-width: 426px)
+{
+  li.nav-item {
+    float: left;
+}
+  .navbar-nav
+  {
+    display: block !important;
+  }
+}
 @media screen and (max-width: 600px) {
+  div#navbarResponsive a.nav-link {
+    width: 100%;
+}
+  div#navbarResponsive {
+    text-align: center;
+}
+div#navbarResponsive ul {
+    width: 100%;
+}
   .services__item {
     margin-left: 0px;
     width: 270px;
@@ -543,7 +586,6 @@ max-width: unset;
 .nav-links {
     margin: 0 auto;
     padding: 15px;
-    border-bottom: 1px solid gray;
 }
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
     width: 100%;
@@ -552,4 +594,54 @@ max-width: unset;
 .woocommerce .woocommerce-ordering select {
     padding: 5px;
     border-radius: 90px;
+}
+div#comments {
+    background-color: #eff5bd;
+    padding: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+div#comments input {
+    width: 100%;
+}
+.page-numbers {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px 0 0;
+  border: 1px solid #eee;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600;
+}
+.page-numbers.current,
+a.page-numbers:hover {
+  background: #f9f9f9;
+}
+@media screen and (max-width: 768px){
+.wpcf7 #Personal-Details, .wpcf7 #Education, .wpcf7 #Profession, .wpcf7 #To-Teach, .wpcf7 #Timings, .wpcf7 #Colscol, .wpcf7 #Upload {
+height:auto;
+padding: 20px;
+}
+#Teacher-column #left {
+width: 100%;
+float: none;
+margin-bottom: 20px;
+}
+
+.input-text, input[type=email], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+width: 100%;
+}
+
+span.wpcf7-list-item {
+display: block;
+margin: 20px 0 0 1em;
+}
+
+.wpcf7 #Upload p{
+line-height:21px;
+}
+}
+form.wpcf7-form {
+    float: right;
 }
