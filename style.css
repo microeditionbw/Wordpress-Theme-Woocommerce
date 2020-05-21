@@ -614,6 +614,11 @@ div#comments input {
   border-radius: 2px;
   font-weight: 600;
 }
+article:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
 .page-numbers.current,
 a.page-numbers:hover {
   background: #f9f9f9;
